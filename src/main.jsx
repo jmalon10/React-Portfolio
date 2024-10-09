@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App';
+import About from './pages/About';
 
 
 // Define the accessible routes, and which components respond to which URL
@@ -13,11 +14,11 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     errorElement: <Error />,
-    // children: [
-    //   {
-    //     index: true,
-    //     element: <About />,
-    //   },
+    children: [
+      {
+        index: true,
+        element: <About />,
+      },
     //   {
     //     path: '/About',
     //     element: <About />,
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
     //     path: '/Contact',
     //     element: <Contact />,
     //   },
-    // ],
+    ],
   },
 ]);
 
