@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 
 
 // Define the accessible routes, and which components respond to which URL
@@ -24,10 +25,10 @@ const router = createBrowserRouter([
         path: '/Contact',
         element: <Contact />,
       },
-    //   {
-    //     path: '/Blog',
-    //     element: <Blog />,
-    //   },
+      {
+        path: '/Resume',
+        element: <Resume />,
+      },
     //   {
     //     path: '/Contact',
     //     element: <Contact />,
