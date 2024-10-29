@@ -1,87 +1,94 @@
 import { useState } from 'react';
-// import './style.css'; // copied from class
+// import './style.css'; // You can uncomment this if needed
 
-// Here we import a helper function that will check if the email is valid
+// Helper functions
 import { checkMessage, validateEmail } from '../utils/helpers';
 
 function Contact() {
-  // Create state variables for the fields in the form
-  // We are also setting their initial values to an empty string
+  // State variables
   const [email, setEmail] = useState('');
-  const [Name, setName] = useState('');
-  const [Message, setMessage] = useState('');
+  const [name, setName] = useState(''); // Changed to lowercase
+  const [message, setMessage] = useState(''); // Changed to lowercase
   const [errorMessage, setErrorMessage] = useState('');
 
+  // Handle input changes
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
+    // Set state based on input type
     if (inputType === 'email') {
       setEmail(inputValue);
-    } else if (inputType === 'Name') {
-      setName(inputValue);
+    } else if (inputType === 'name') {
+      setName(inputValue); // Use lowercase 'name'
     } else {
-      setMessage(inputValue);
+      setMessage(inputValue); // Use lowercase 'message'
     }
   };
 
+  // Handle form submission
   const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !Name) {
+    // Validate email and name
+    if (!validateEmail(email) || !name) {
       setErrorMessage('Email or name is invalid');
-      // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
-    if (!checkMessage(Message)) {
-      setErrorMessage(
-        `message is required`
-      );
+    
+    // Validate message
+    if (!checkMessage(message)) {
+      setErrorMessage('Message is required');
       return;
-    };
+    }
 
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    // Clear form fields if successful
     setName('');
     setMessage('');
     setEmail('');
+    setErrorMessage(''); // Clear error message
   };
 
   return (
     <div className="container text-center">
-      <h1>Contact Me!</h1>
+      <h1 className="mb-4">Contact Me!</h1>
       <form className="form" onSubmit={handleFormSubmit}>
-      <input
-          value={Name}
-          name="Name"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="name"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <textarea
-          value={Message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="message"
-        />
-        <button type="submit">Submit</button>
+        <div className="form-group mb-3">
+          <input
+            value={name} // lowercase
+            name="name" // lowercase
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Name"
+            className="form-control"
+          />
+        </div>
+        <div className="form-group mb-3">
+          <input
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="Email"
+            className="form-control"
+          />
+        </div>
+        <div className="form-group mb-4">
+          <textarea
+            value={message} // lowercase
+            name="message" // lowercase
+            onChange={handleInputChange}
+            placeholder="Message"
+            className="form-control"
+            rows="4"
+          />
+        </div>
+        <button type="submit" className="btn btn-primary">Submit</button>
       </form>
       {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
+        <div className="mt-3">
+          <p className="error-text text-danger">{errorMessage}</p>
         </div>
       )}
     </div>
