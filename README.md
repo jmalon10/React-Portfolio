@@ -1,9 +1,31 @@
-# React + Vite
+![License Badge](https://img.shields.io/badge/license-MIT-yellow.svg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Jackies React Portfolio 
 
-Currently, two official plugins are available:
+## Description
+This project was made from scratch using Vite, React, and the Bootstrap CSS framework to showcase my understanding of Web Development. The Portfolio refelcts accurate information about myself, my coding abilities and previous projects to show to potential employers. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-- [Nexlify app](https://jackiesportfolio.netlify.app/)
+## Table of Contents 
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Questions](#questions)
+
+## Installation
+Clone the repository by opening a new folder in your terminal and entering 
+- git clone https://github.com/jmalon10/React-Portfolio.git
+
+## Usage
+View the deployed application on Netlify [Here](https://jackiesportfolio.netlify.app/)
+
+For development purposes, after cloning the repo, open an integrated terminal in the root directory and run the following commands:
+- npm i 
+- npm run build
+- npm run dev
+
+## License
+MIT License
+
+## Questions
+Please contact me via email for any further questions [here](mailto:jmaloney11277@gmail.com) or find me on GitHub [here!](https://github.com/jmalon10)
