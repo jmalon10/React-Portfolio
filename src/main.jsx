@@ -8,6 +8,7 @@ import App from './App';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Portfolio from './pages/Portfolio';
 
 
 // Define the accessible routes, and which components respond to which URL
@@ -29,10 +30,10 @@ const router = createBrowserRouter([
         path: '/Resume',
         element: <Resume />,
       },
-    //   {
-    //     path: '/Contact',
-    //     element: <Contact />,
-    //   },
+      {
+        path: '/Portfolio',
+        element: <Portfolio />,
+      },
     ],
   },
 ]);
