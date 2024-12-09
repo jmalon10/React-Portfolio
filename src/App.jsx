@@ -5,14 +5,18 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100 ">
+      <header>
       <Header />
       <NavTabs />
-    <main>
+    </header>
+    <main className="flex-fill">
       <Outlet />
     </main>
+    <footer>
     <Footer />
-    </>
+    </footer>
+  </div>
   );
 }
 export default App;
