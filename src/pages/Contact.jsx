@@ -59,7 +59,7 @@ function Contact() {
   };
 
   return (
-    <div className="container text-center">
+    <div className="container text-center" style={{ width: "30%" }}>
       <h2 className="mb-4" style={{ paddingTop: '20px'}}>Contact Me!</h2>
       <form className="form" onSubmit={handleFormSubmit}>
         <div className="form-group mb-3">

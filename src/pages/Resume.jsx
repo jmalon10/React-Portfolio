@@ -5,7 +5,8 @@ function Resume() {
         <section style={{ paddingTop: "30px" }} className="container text-center">
             
             <div className="skills">
-                <div className="about-card">
+                <div className="about-card"
+                style={{ width: "40%" }}>
                 <h2>Front-End Development Skills</h2>
                 <ul className="list-unstyled">
                     <li>HTML</li>
@@ -15,7 +16,8 @@ function Resume() {
                     <li>Bootstrap</li>
                 </ul>
                 </div>
-                <div className="about-card">
+                <div className="about-card"
+                style={{ width: "40%" }}>
                 <h2>Back-End Development Skills</h2>
                 <ul className="list-unstyled">
                     <li>APIs</li>

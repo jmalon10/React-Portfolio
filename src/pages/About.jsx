@@ -62,7 +62,7 @@ export default function About() {
                 </div>
               </div>
            </div>
-           <div className="about-container">
+           <div className="about-container" style={{ width: "40%" }}>
             <div className="about-card">
            <h2>About Me</h2>
            <p>
