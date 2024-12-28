@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <footer className="p-3 mb-2 bg-dark text-white">
+        <footer className="p-3 mb-2 bg-dark text-white text-center">
             <a href="https://github.com/jmalon10" className="text-white me-4">
                 <i className="fab fa-github"></i>
             </a>

@@ -1,69 +1,63 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+body {
+  background-color: #1a1a1a !important; /* Very dark grey */
+  color: #ccc !important; /* Light grey text for better contrast */
+  font-family: 'Verdana', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: #ff007f; /* Neon pink links */
+  text-decoration: none;
 }
+
 a:hover {
-  color: #535bf2;
+  text-decoration: underline;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.btn-primary {
+  background-color: #ff007f !important;
+  border: 0px !important;
+}
+.about-container {
+  text-align: center;
+  margin: 50px auto;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.about-card {
+  background-color: #1a1a1a; /* Match the dark theme */
+  border: 2px solid #ff007f; /* Neon pink border */
+  border-radius: 15px;
+  padding: 20px;
+  color: #ccc; /* Light grey text for readability */
+  box-shadow: 0 0 15px #ff007f, 0 0 30px #ff007f, 0 0 45px #ff007f; /* Glowing effect */
+  width: 80%;
+  margin: 20px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.about-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 0 25px #ff007f, 0 0 50px #ff007f, 0 0 75px #ff007f; /* Intensify the glow */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+h2 {
+  color: #ff007f; /* Neon pink for the heading */
+  text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f; /* Glow effect for text */
+}
+
+p {
+  font-size: 1.2rem; /* Slightly larger text for readability */
+  line-height: 1.6; /* Better spacing for text */
+}
+
+.card {
+  background-color: #1a1a1a !important; /* Match the dark theme */
+  border: 2px solid #ff007f; /* Neon pink border */
+  border-radius: 15px;
+  padding: 20px;
+  color: #ccc !important; /* Light grey text for readability */
+  box-shadow: 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f !important; /* Glowing effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  text-align: center;
 }

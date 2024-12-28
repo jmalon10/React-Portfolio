@@ -4,6 +4,7 @@ import weather from '../assets/weather-dashboard.png';
 import candidate from '../assets/candidate-search.png';
 import readme from '../assets/Readme.png';
 import vehicle from '../assets/vehicle.png';
+import novel from '../assets/novel-nook.png';
 
 function Portfolio() {
     return (
@@ -37,16 +38,16 @@ function Portfolio() {
                     </div>
                 </div>
 
-                {/* Portfolio Card 3 */}
+                {/* Portfolio Card 7 */}
                 <div className="col-md-4 mb-4">
                     <div className="card h-100">
-                        <img src={weather} className="card-img-top" alt="Weather Dashboard" />
+                        <img src={novel} className="card-img-top" alt="Novel Nook" />
                         <div className="card-body">
-                            <h5 className="card-title">Weather Dashboard</h5>
+                            <h5 className="card-title">Novel Nook</h5>
                         </div>
                         <div className="card-footer d-flex justify-content-center">
-                            <a href="https://weather-dashboard-9rqx.onrender.com/" className="btn btn-primary mx-2" target="_blank" rel="noopener noreferrer">View App</a>
-                            <a href="https://github.com/jmalon10/Weather-Dashboard" className="btn btn-secondary mx-2" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                            <a href="https://novel-nook.onrender.com/" className="btn btn-primary mx-2" target="_blank" rel="noopener noreferrer">View App</a>
+                            <a href="https://github.com/jmalon10/Novel-Nook" className="btn btn-secondary mx-2" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
                         </div>
                     </div>
                 </div>
@@ -89,6 +90,20 @@ function Portfolio() {
                         <div className="card-footer d-flex justify-content-center">
                             <a href="https://github.com/jmalon10/VehicleBuilder" className="btn btn-primary mx-2" target="_blank" rel="noopener noreferrer">View App</a>
                             <a href="https://github.com/jmalon10/VehicleBuilder" className="btn btn-secondary mx-2" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Portfolio Card 3 */}
+                <div className="col-md-4 mb-4">
+                    <div className="card h-100">
+                        <img src={weather} className="card-img-top" alt="Weather Dashboard" />
+                        <div className="card-body">
+                            <h5 className="card-title">Weather Dashboard</h5>
+                        </div>
+                        <div className="card-footer d-flex justify-content-center">
+                            <a href="https://weather-dashboard-9rqx.onrender.com/" className="btn btn-primary mx-2" target="_blank" rel="noopener noreferrer">View App</a>
+                            <a href="https://github.com/jmalon10/Weather-Dashboard" className="btn btn-secondary mx-2" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
                         </div>
                     </div>
                 </div>

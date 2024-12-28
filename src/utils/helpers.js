@@ -4,9 +4,9 @@ export function validateEmail(email) {
 }
 
 export function checkMessage(input) {
-  const message = '';
-  if (!input.match(message)) {
-    return true;
+  if (!input || input.trim() === '') {
+    return false;
   }
-  return false;
+  return true; 
 }
+
