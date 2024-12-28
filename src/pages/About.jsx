@@ -6,7 +6,7 @@ import Badge from '../assets/Badge.jpg';
 
 export default function About() {
     return (
-        <section>
+        <section style={{ paddingTop: '20px' }}>
            <div
              id="carouselExampleSlidesOnly"
              className="carousel slide"
@@ -62,6 +62,8 @@ export default function About() {
                 </div>
               </div>
            </div>
+           <div className="about-container">
+            <div className="about-card">
            <h2>About Me</h2>
            <p>
              Hi, I'm Jackie Maloney. I'm a full stack web developer with a passion for creating
@@ -69,6 +71,8 @@ export default function About() {
              React on the front end, and Node.js, Express.js, and MySQL on the back end. I'm excited
              to continue learning and growing as a developer!
            </p>
+           </div>
+           </div>
         </section>
     );
 };
