@@ -60,7 +60,7 @@ function Contact() {
 
   return (
     <div className="container text-center">
-      <h1 className="mb-4">Contact Me!</h1>
+      <h2 className="mb-4" style={{ paddingTop: '20px'}}>Contact Me!</h2>
       <form className="form" onSubmit={handleFormSubmit}>
         <div className="form-group mb-3">
           <input
@@ -69,7 +69,7 @@ function Contact() {
             onChange={handleInputChange}
             type="text"
             placeholder="Name"
-            className="form-control"
+            className="form-control about-card"
           />
         </div>
         <div className="form-group mb-3">
@@ -79,7 +79,7 @@ function Contact() {
             onChange={handleInputChange}
             type="email"
             placeholder="Email"
-            className="form-control"
+            className="form-control about-card"
           />
         </div>
         <div className="form-group mb-4">
@@ -88,7 +88,7 @@ function Contact() {
             name="message" // lowercase
             onChange={handleInputChange}
             placeholder="Message"
-            className="form-control"
+            className="form-control about-card"
             rows="4"
           />
         </div>
