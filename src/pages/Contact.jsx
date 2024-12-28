@@ -1,53 +1,61 @@
 import { useState } from 'react';
-// import './style.css'; // You can uncomment this if needed
-
-// Helper functions
+import emailjs from 'emailjs-com';
 import { checkMessage, validateEmail } from '../utils/helpers';
 
 function Contact() {
-  // State variables
+ 
   const [email, setEmail] = useState('');
-  const [name, setName] = useState(''); // Changed to lowercase
-  const [message, setMessage] = useState(''); // Changed to lowercase
+  const [name, setName] = useState(''); 
+  const [message, setMessage] = useState(''); 
   const [errorMessage, setErrorMessage] = useState('');
 
-  // Handle input changes
+
   const handleInputChange = (e) => {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Set state based on input type
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'name') {
-      setName(inputValue); // Use lowercase 'name'
+      setName(inputValue); 
     } else {
-      setMessage(inputValue); // Use lowercase 'message'
+      setMessage(inputValue); 
     }
   };
 
-  // Handle form submission
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    // Validate email and name
+  
     if (!validateEmail(email) || !name) {
       setErrorMessage('Email or name is invalid');
       return;
     }
-    
-    // Validate message
+  
     if (!checkMessage(message)) {
       setErrorMessage('Message is required');
       return;
     }
-
-    // Clear form fields if successful
-    setName('');
-    setMessage('');
-    setEmail('');
-    setErrorMessage(''); // Clear error message
+  
+    const serviceId = 'service_d3flf3y';
+    const templateId = 'template_ooc6v7x';
+    const userId = '6RiBla8RwhQOD1LYs';
+  
+    emailjs
+      .send(serviceId, templateId, { name, email, message }, userId)
+      .then(
+        () => {
+          alert('Your message was sent!');
+          setName('');
+          setMessage('');
+          setEmail('');
+          setErrorMessage('');
+        },
+        (error) => {
+          console.error(error);
+          setErrorMessage('Failed to send message.');
+        }
+      );
   };
 
   return (

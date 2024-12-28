@@ -40,7 +40,7 @@ export default function About() {
                   <img
                     src={Poster}
                     className="d-block mx-auto"
-                    style={{ maxHeight: '300px', maxWidth: '50%' }}
+                    style={{ maxHeight: '300px', Width: '50%' }}
                     alt="Research Poster"
                   />
                 </div>
@@ -48,7 +48,7 @@ export default function About() {
                   <img
                     src={Bootcamp}
                     className="d-block mx-auto"
-                    style={{ maxHeight: '300px', maxWidth: '50%' }}
+                    style={{ maxHeight: '300px', Width: '50%' }}
                     alt="Bootcamp GradPic"
                   />
                 </div>
@@ -56,7 +56,7 @@ export default function About() {
                   <img
                     src={Badge}
                     className="d-block mx-auto"
-                    style={{ maxHeight: '300px', maxWidth: '50%' }}
+                    style={{ maxHeight: '300px', Width: '50%' }}
                     alt="Rochester Lab badge"
                   />
                 </div>
