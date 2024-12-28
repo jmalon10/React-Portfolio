@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header>
-      <h1>Jackie Maloney</h1>
+      <h1>Jacqueline Maloney</h1>
     </header>
   );
 }
