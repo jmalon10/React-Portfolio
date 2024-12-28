@@ -51,3 +51,13 @@ p {
   line-height: 1.6; /* Better spacing for text */
 }
 
+.card {
+  background-color: #1a1a1a !important; /* Match the dark theme */
+  border: 2px solid #ff007f; /* Neon pink border */
+  border-radius: 15px;
+  padding: 20px;
+  color: #ccc !important; /* Light grey text for readability */
+  box-shadow: 0 0 10px #ff007f, 0 0 15px #ff007f, 0 0 20px #ff007f !important; /* Glowing effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  text-align: center;
+}
