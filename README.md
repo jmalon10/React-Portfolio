@@ -1,7 +1,7 @@
 ![License Badge](https://img.shields.io/badge/license-MIT-yellow.svg)
 
 # Jackies React Portfolio 
-![Screen Shot 2024-10-31 at 7 31 20 PM](https://github.com/user-attachments/assets/d2dc17b2-914d-4271-a5df-afc0605b2e26)
+![Portfolio-Peek](https://github.com/user-attachments/assets/9d114093-8663-40da-b01e-16c928bf32dd)
 
 ## Description
 This project was made from scratch using Vite, React, and the Bootstrap CSS framework to showcase my understanding of Web Development. The Portfolio refelcts accurate information about myself, my coding abilities and previous projects to show to potential employers. 
